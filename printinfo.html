@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio | 3D Printing - Printers and Filament</title>
+        <link rel="icon" type="image/icon type" href="img/tyler.jpg">
+
+        <link rel="stylesheet" type="text/css" href="printstyle.css">
+
+        <style>
+            ul.nav{
+                background-color:#caaa93;
+            }
+            li a:hover{
+                background-color:#d76b1d;
+            }
+            .active{
+                background-color:#4b250a;
+                color:white;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="saddlebrown">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="printindex.html">Home</a></li>
+                <li><a href="printing.html">How to Make a 3D Print</a></li>
+                <li><a class="active" href="printinfo.html">Printers and Filament</a></li>
+                <li><a href="printmodels.html">Models and Slicing</a></li>
+                <li><a href="printexamples.html">Example Prints</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <hr>
+            <h1 class="title">3D Printers</h1>
+            <hr>
+            <h3>FDM vs. SLA Printing</h3>
+            <p>
+                Fused deposition modeling (FDM) and stereolithography (SLA) are two methods of 3D printing an object. FDM printing is the
+                type of printing described on the homepage, where a nozzle heats up a material and then extrudes the molten plastic onto a
+                bed using a motor. In SLA printing, a bed sits above a vat of resin. This resin is then selectively cured using a precise
+                laser, which causes it to harden into a plastic. The bed is then moved up, and the process is repeated. SLA printing is known
+                for its higher print resloutions and intricate details, due to the use of light on resin instead of heated plastic. Any
+                information detailed on this site will refer to FDM printing.
+            </p>
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0084/1934/4450/products/01_96cba01c-104f-4190-9eae-59e2d36c032d_734x734.jpg?v=1590223863"
+                alt="Image of an FDM printer" style="display:inline;margin-left:20px;">
+                <img src="https://3qcbdntxdyb43ubh6h0b0qgz-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/Screen-Shot-2018-09-17-at-9.01.50-AM.png"
+                alt="Image of an SLA printer" style="display:inline;margin-right:20px;">
+                <br>
+                <figcaption>FDM printer (left) and SLA printer (right)</figcaption>
+            </figure>
+            <h3>Bowden vs. Direct Drive</h3>
+            <p>
+                In a bowden system, the filament is fed through extruding gears mounted off to the side of the printer and into a flexible
+                tube (bowden tube). These gears then push the filament down the tube and into the hot end, where it gets melted down and
+                extruded. In a direct drive system, the gears are mounted directly above the hot end of the printer. The filament travels
+                along a much shorter distance before getting melted. If you plan on using a wide variety of materials and colors, you might
+                want to pick a direct drive system. If you don't plan on printing with a lot of flexible filament, you might want to choose
+                a bowden system for higher speed and accuracy.
+            </p>
+            <figure>
+                <img src="https://toms3d.org/wp-content/uploads/2018/04/All-wires-to-the-Bowden-Tube.png" alt="Image of a bowden style
+                printer" style="display:inline;margin-left:20px;width:500px;">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61GEzG8zkgL._SL1500_.jpg" alt="Image of a direct drive style
+                printer" style="display:inline;margin-right:20px;">
+                <br>
+                <figcaption>Bowden system (left) and direct drive system (right)</figcaption>
+            </figure>
+            <h3>Other Info</h3>
+            <p>
+                3D printers move in three axes. The X and Y axes are the lateral directions; the Z axis is the vertical direction. The way
+                these axes are utilized varies by printer. Some have the bed moving along the Z axis, and the nozzle moves along the X and Y
+                axes. Some printers have the nozzle take the Z axis and the Y axis, and the bed handles the X axis. Each printer may have a
+                different bed size (dictates the maximum size it can print) or a different maximum temperature.
+            </p>
+            <hr>
+            <h1 class="title">Filament</h1>
+            <hr>
+            <h3>Filament Types:</h3>
+            <p>
+                Filament is the material that is used in FDM printing machines. Filament comes in a wide range of colors and types. Each
+                type of filament has different properties (strength, flexibility, durability, etc.) and different melting points. Here is
+                an overview of some of the most common types:
+            </p>
+            <figure style="float:right;">
+                <img src="https://i.all3dp.com/cdn-cgi/image/fit=cover,w=1284,h=722,gravity=0.5x0.5,format=auto/wp-content/uploads/2018/02/26151722/filament.jpg"
+                alt="Eight rolls of different-colored filament next to each other">
+                <figcaption>Different colors of filament</figcaption>
+            </figure>
+            <ul class="list">
+                <li>
+                    <b>PLA</b>: Polylactic acid (PLA) is the most common type of filament in the world of consumer 3D printing. It is easy
+                    to print with, has a low printing temperature, and gives off low amounts of toxic fumes. PLA fumes can give headaches
+                    and eye strain if one has too much exposure to it, so be sure to print with PLA in a well-ventilated area. It is also
+                    more environmentally friendly than other filaments, being made from renewable resources like fermented plant starches
+                    (from corn, cassava, sugarcane, beet pulp, etc.).
+                </li>
+                <li>
+                    <b>ABS</b>: Acrylonitrile butadiene styrene (ABS) is the second most popular 3D printer filament. Although being more
+                    difficult to print with, ABS's material properites are moderately superior to PLA. Products such as LEGO bricks are
+                    made of ABS. ABS has high durability and higher temperatures, but it tends to warp during cooling. ABS also emits
+                    harmful fumes, so printing in a ventilated area or an enclosing around the printer is ideal.
+                </li>
+                <li>
+                    <b>PETG</b>: Polyethylene trephthalate gylcol-modified (PETG) is a popular filament type that is known for its
+                    flexability and durability. It is a varient of polyethylene trephthalate (PET), the most commonly used plastic in the
+                    world (used for bottling and packaging). It is in the middle of PLA and ABS, being more flexible and durable than PLA
+                    but being easier to print with than ABS. PETG is the safest filament available in regards to fumes emitted during the
+                    printing process.
+                </li>
+                <li>
+                    <b>TPE</b>: Thermoplastic elastomers (TPE) are rubber-like palstics, which have high durability and flexibility. TPE is
+                    a non-specific term for flexible filament, and is a broad class of plastics that are used to label different types of
+                    filaments. Printing can be difficult, as it is not as easy to extrude as other filaments.
+                </li>
+                <li>
+                    <b>TPU</b>: Thermoplastic polyurethane (TPU) is a variety of TPE. It is slightly more rigid than TPE, which makes it
+                    easier to print. It is better resistant to cold temperatures, meaning prints better retain elasticity, as well as
+                    having a higher durability than TPE.
+                </li>
+                <li>
+                    <b>TPC</b>: Thermolactic copolyester (TPC) is an additional variety of TPE that is used in 3D printing (although it is
+                    less common). It is more resistant to high temperatures as well as chemical and UV exposure.
+                </li>
+                <li>
+                    <b>Nylon</b>: Nylon has many industrial applications outside of 3D printing. It is the most flexible, most durable, and
+                    strongest filament on the list. There are many grades of nylon, the most common for 3D printing being 618 and 645.
+                </li>
+                <li>
+                    <b>PP</b>: Polypropylene (PP) has a broad range of applications, such as engineering fabrics, food packaging, textiles,
+                    and bank notes. It is tough, light, flexible, food-safe, and chemically resistant. However, PP is extremely difficult
+                    to print with and often has many issues with warping and adhesion. Fumes produced from PP are very toxic, and they can
+                    cause respiratory irritation, pulmonary edema, and a possible asthma-like response.
+                </li>
+            </ul>
+            <table class="center" id="table1">
+                <caption><h1>Filament Material Properites</h1></caption>
+                <tr>
+                    <th>Filament Type</th>
+                    <th>Print Difficulty</th>
+                    <th>Strength</th>
+                    <th>Flexibility</th>
+                    <th>Durability</th>
+                    <th>Nozzle Temp.</th>
+                    <th>Bed Temp.</th>
+                </tr>
+                <tr>
+                    <td>PLA</td>
+                    <td>Low</td>
+                    <td>High</td>
+                    <td>Low</td>
+                    <td>Medium</td>
+                    <td>180°C – 230°C</td>
+                    <td>20°C – 60°C</td>
+                </tr>
+                <tr>
+                    <td>ABS</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>210°C – 250°C</td>
+                    <td>80°C – 110°C</td>
+                </tr>
+                <tr>
+                    <td>PETG</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>220°C – 250°C</td>
+                    <td>50°C – 75°C</td>
+                </tr>
+                <tr>
+                    <td>TPE</td>
+                    <td>Medium</td>
+                    <td>Medium</td>
+                    <td>Very High</td>
+                    <td>Very High</td>
+                    <td>210°C – 230°C</td>
+                    <td>30°C – 60°C</td>
+                </tr>
+                <tr>
+                    <td>TPU</td>
+                    <td>Low</td>
+                    <td>Medium</td>
+                    <td>Very High</td>
+                    <td>Very High</td>
+                    <td>210°C – 230°C</td>
+                    <td>30°C – 60°C</td>
+                </tr>
+                <tr>
+                    <td>TPC</td>
+                    <td>Medium</td>
+                    <td>Medium</td>
+                    <td>Very High</td>
+                    <td>Very High</td>
+                    <td>210°C – 230°C</td>
+                    <td>30°C – 60°C</td>
+                </tr>
+                <tr>
+                    <td>Nylon</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>240°C – 260°C</td>
+                    <td>70°C – 100°C</td>
+                </tr>
+                <tr>
+                    <td>PP</td>
+                    <td>Very High</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>230°C – 260°C</td>
+                    <td>60°C – 110°C</td>
+                </tr>
+            </table>
+            <h3>Choosing a Filament Type</h3>
+            <p>
+                If you are starting out with 3D printing, it is recommended to start with PLA. It is easy to print with and comes in many
+                different colors and types. Once you get the hang of printing with PLA, you can start moving into different types, such as
+                PETG and TPU.
+            </p>
+        </div>
+        <div class="footer">
+            <p>Hover over the images to make them more colorful!</p>
+        </div>
+    </body>
+</html>

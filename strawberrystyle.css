@@ -1,0 +1,100 @@
+.home{
+    background-image:url("https://publicdomainpictures.net/pictures/160000/velka/close-up-view-of-strawberries.jpg");
+    color:white;
+}
+div.jumbotron{
+    margin-bottom:0;
+}
+div.jumbotron h1{
+    font-size:11vw;
+    -webkit-text-fill-color:white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width:1.5px;
+    -webkit-text-stroke-color:black;
+}
+div.caption h3{
+    font-size:6vw;
+    -webkit-text-fill-color:white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width:1.2px;
+    -webkit-text-stroke-color:black;
+}
+div.caption a{
+    font-size:5vw;
+    -webkit-text-fill-color:white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width:0.9px;
+    -webkit-text-stroke-color:black;
+}
+div.caption a:active{
+    text-decoration:underline;
+}
+p.footer{
+    color:gray;
+}
+p.footer-alt{
+    color:#bfbfbf;
+}
+p.footer a{
+    color:darkgray;
+}
+p.footer-alt a{
+    color:lightgray;
+}
+p.footer a:hover{
+    color:#595959;
+}
+p.footer-alt a:hover{
+    color:#f2f2f2;
+}
+#back{
+  color:black;
+}
+h1.page-content{
+    font-size:36pt;
+}
+h4.page-content{
+    font-size:22pt;
+    padding-bottom:15px;
+}
+div.page-content p{
+    font-size:18pt;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+div.sidenav{
+    font-size:14pt;
+}
+div.sidenav a{
+    color:#555;
+}
+div.sidenav a:hover{
+    text-decoration:underline;
+}
+.img-about{
+    width:100%;
+    height:auto;
+    margin:15px, auto, 15px, auto;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-radius:50px;
+    display:block;
+}
+.about{
+    font-size:16pt;
+    text-align:justify;
+    line-height:4;
+}
+.rotate{
+    animation: rotation 8s infinite linear;
+    width:400px;
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}

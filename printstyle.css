@@ -1,0 +1,106 @@
+/* navbar styles */
+ul.nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+ul.nav li{
+    display:inline;
+    float:left;
+}
+ul.nav li a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+/* page styles */
+body{
+    font-family:"Comic Sans MS";
+}
+.content{
+    background-color:white;
+    margin:50px 100px 100px 100px;
+    padding:20px;
+}
+.title{
+    text-align:center;
+}
+img{
+    height:300px;
+    width:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    filter:grayscale(1);
+    transition:filter 1s;
+}
+img:hover{
+    filter:grayscale(0);
+}
+figure{
+    text-align:center;
+}
+a.link{
+    text-decoration:none;
+    color:#0000EE
+}
+a.link:visited{
+    color:#0000EE;
+}
+a.link:hover{
+    text-decoration:underline;
+}
+a.link:active{
+    color:#EE0000;
+}
+ul.list, ol.list{
+    padding-left:35px;
+}
+ul.list li, ol.list li{
+    padding-bottom:10px;
+}
+table, th, td{
+    text-align:center;
+    border:1px solid black;
+    border-collapse:collapse;
+}
+table#table2, table#table2 td{
+    border:0px solid transparent;
+}
+th, td{
+    padding:10px;
+}
+table.center{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:35px;
+}
+table#table1 tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+.footer{
+    color:darkgray;
+    text-align:center;
+    padding:20px;
+    bottom:0px;
+}
+figcaption{
+    padding-top:15px;
+}
+.caption{
+    color:darkgray;
+}
+.caption:hover{
+    color:black;
+}
+td p{
+    text-align:justify;
+    width:300px;
+}

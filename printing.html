@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio | 3D Printing - Making a Print</title>
+        <link rel="icon" type="image/icon type" href="img/tyler.jpg">
+
+        <link rel="stylesheet" type="text/css" href="printstyle.css">
+
+        <style>
+            ul.nav{
+                background-color:#ad8bc6;
+            }
+            ul.nav li a:hover{
+                background-color:#913ece;
+                color:white
+            }
+            .active{
+                background-color:#cc23f9;
+                color:black;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#5b178d">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="printindex.html">Home</a></li>
+                <li><a class="active" href="printing.html">How to Make a 3D Print</a></li>
+                <li><a href="printinfo.html">Printers and Filament</a></li>
+                <li><a href="models.html">Models and Slicing</a></li>
+                <li><a href="examples.html">Example Prints</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <hr>
+            <h1 class="title">How to Make a 3D Print</h1>
+            <hr>
+            <p>
+                In order to make a 3D print, you need a few things. You need a 3D printer (obviously), a roll of filament, a 3D model, and
+                a slicer. Here is how to make a 3D print:
+            </p>
+            <ol class="list">
+                <li>
+                    The first step in creating a 3D print is to get a 3D model. You can create one yourself or download one off of the
+                    Internet. More on models on the <a class="link" href="printmodels.html">Models and Slicing</a> page.
+                </li>
+                <li>
+                    The second step is to then slice your model. This will turn it into g-code and allow your printer to read and print the
+                    model. Slicing a model is very easy. You must:
+                        <ol class="list" style="list-style-type:lower-roman;">
+                            <li>Upload your model into the slicer</li>
+                            <li>Move and resize your model however you like
+                            <li>Determine the layer height you want to print at</li>
+                            <li>
+                                Determine the infill percentage you want inside your model (this is how much plastic is on the inside of
+                                your model, 15%-50% is usually good)
+                            </li>
+                            <li>
+                                Determine the temperature you need to print at (there is a chart of material types and temperatures on the
+                                <a class="link" href="printinfo.html">Printers and Filament</a> page)
+                            </li>
+                            <li>
+                                Determine whether you need support or not (if there are sharp angles that hang with nothing below them you
+                                will probably want to enable support)
+                            </li>
+                            <li>
+                                Determine whether you want a:
+                                <ul class="list" style="list-style-type:circle;">
+                                    <li>
+                                        <b>Raft</b>: Prints a layer of filament in which the model is printed on top of. Used to prevent
+                                        warping and improve bed adhesion.
+                                    </li>
+                                    <li>
+                                        <b>Brim</b>: Kind of like a raft, but it only prints filament connecting to the outer edge of the
+                                        model. Also used to prevent warping and improve bed adhesion.
+                                    </li>
+                                    <li>
+                                        <b>Skirt</b>: An outline that prints around the model. This does not aid the print at all, but it is
+                                        good for getting the extruder ready to print as well as detecting issues that you may have while
+                                        printing, which saves time and material.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Save the g-code file onto a USB flash drive</li>
+                        </ol>
+                </li>
+                <li>
+                    The third step is to insert the roll of filament into the 3D printer.
+                </li>
+                <li>
+                    The fourth step is to load the g-code file onto the printer using the flash drive.
+                </li>
+                <li>
+                    The final step is to hit print and let the printer do its thing!
+                </li>
+            </ol>
+            <p>
+                Make sure to monitor any print you make and check back every few minutes/hours to make sure it hasn't failed. If a print
+                fails it is probably due to your settings, so try to identify the problem and change the slicer settings accordingly.
+                After the print is completed and removed, make sure to clean and wipe down the bed.
+            </p>
+            <h3>Multi-Color Printing</h3>
+            <p>
+                Printers with only one nozzle can only print one color at a time, but there are ways around this. There are three main
+                methods to printing in multiple colors. The first method is quite obvious, it is to get a printer with more than one
+                nozzle. An additional nozzle allows for printing in an additional color. Another method for printing in a second color is
+                to add a stop command in the gcode of the print (more on g-code in the <a class="link" href="printmodels.html">Models and Slicing
+                </a> page). This command will stop the print mid-way and allow the user to manually switch out the filament and then resume
+                the print in a different color. The third and final method to get a print in multiple colors is to split up the model into
+                different parts, and then print each seperately in the desired color. Each part can be made to fit together, or they can be
+                glued together.
+            </p>
+            <figure>
+                <img src="rainbowcube.jpg"
+                alt="Multi-colored 3D printed rainbow cube" style="padding:10px;">
+                <figcaption>This cube was printed with the g-code stop method</figcaption>
+            </figure>
+        </div>
+        <div class="footer">
+            <p>Hover over the images to make them more colorful!</p>
+        </div>
+    </body>
+</html>
